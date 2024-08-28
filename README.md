@@ -1,59 +1,69 @@
-https://github.com/FR-macedo/EstoquePOO
-
-Projeto de Programação Orientada a Objetos.
-Solicitado no dia 24/10/2023 pelo professor Gerivan.
-
-Integrantes do grupo: Francisco Macedo, Samuel Alexandre, Luigi Mendes
-
-Requisitos: 
-
-Deve conter um menu navegável (entrega para o dia 7/11/23)
-
-Visão geral:
-
-O sistema de gestão de estoque é um software que gerencia o controle de estoque de uma
-empresa. O sistema é composto por três entidades principais: Produto, Fornecedor e
-Estoque. O sistema permite que os usuários possam gerenciar a entrada e saída de
-produtos, controlar o estoque de cada produto, além de realizar outras funções de gestão
-de estoque.
-
-Produto (id, código, nome, descrição, fornecedor, dataCadastro…)
-- Cadastrar Produto
-- Buscar Produto por Nome
-- Listar Produtos
-- Deletar Produto
-  
-Pessoa - Fornecedor (id, Nome, CNPJ, logradouro, bairro, cidade, estado, cep, cpf,
-rg, telefone, email, dataCadastro, dataNascimento…)
-- Cadastrar Fornecedor
-- Buscar Fornecedor por Nome
-- Listar Fornecedor
-- Deletar Fornecedor
-  
-Estoque (produto, quantidade, armazen, prateleira…)
-- Atualizar Estoque de produtos
-- Adicionar Estoque de produtos
-- Remover Estoque de produtos
-- Listar Produtos Disponíveis
-  
-Principais conceitos de POO utilizados:
-Encapsulamento: Todas as propriedades e métodos de cada entidade (Produto,
-Fornecedor e Estoque) são encapsulados dentro de sua respectiva classe, garantindo que
-as informações sejam protegidas e acessadas apenas pelos métodos definidos dentro da
-classe.
-
-Herança: A classe fornecedor é uma subclasse da classe Pessoa (classe base). Isso
-permite a reutilização de código e a criação de hierarquias de classes, tornando o sistema
-mais organizado e fácil de manter.
-
-Polimorfismo: As classes Produto, Forncedor e Estoque possuem métodos com o mesmo
-nome, mas com comportamentos diferentes. Por exemplo, o método "buscar" na classe
-Produto realiza uma busca pelo nome do produto, enquanto o método "buscar" na classe
-Fornecedor realiza uma busca pelo nome do fornecedor. Isso permite que o mesmo método
-seja utilizado de formas diferentes em cada classe.
-
-Abstração: As classes Produto, Fornecedor e Estoque são abstrações de conceitos reais, e
-seus atributos e métodos representam características e comportamentos que esses
-conceitos possuem na vida real
-
 # EstoquePOO
+
+## Visão Geral
+
+O sistema de gestão de estoque é um software simples de controle de estoque, desenvolvido como parte de um projeto de Programação Orientada a Objetos (POO). O sistema permite gerenciar a entrada e saída de produtos, controlar o estoque de cada item e realizar outras funções de gestão de estoque. Este projeto foi solicitado pelo professor Gerivan em 24/10/2023.
+
+### Entidades Principais
+
+1. **Produto** (id, código, nome, descrição, fornecedor, dataCadastro…)
+   - Cadastrar Produto
+   - Buscar Produto por Nome
+   - Listar Produtos
+   - Deletar Produto
+
+2. **Pessoa - Fornecedor** (id, Nome, CNPJ, logradouro, bairro, cidade, estado, cep, cpf, rg, telefone, email, dataCadastro, dataNascimento…)
+   - Cadastrar Fornecedor
+   - Buscar Fornecedor por Nome
+   - Listar Fornecedores
+   - Deletar Fornecedor
+
+3. **Estoque** (produto, quantidade, armazém, prateleira…)
+   - Atualizar Estoque de produtos
+   - Adicionar Estoque de produtos
+   - Remover Estoque de produtos
+   - Listar Produtos Disponíveis
+
+### Principais Conceitos de POO Utilizados
+
+- **Encapsulamento:** Propriedades e métodos de cada entidade são encapsulados em suas respectivas classes.
+- **Herança:** A classe `Fornecedor` é uma subclasse da classe `Pessoa`, promovendo a reutilização de código.
+- **Polimorfismo:** Métodos com o mesmo nome, mas comportamentos diferentes, como o método "buscar".
+- **Abstração:** As classes representam abstrações de conceitos reais, com atributos e métodos que refletem essas características.
+
+## Requisitos
+
+- Deve conter um menu navegável.
+- Data de entrega: 07/11/2023
+
+## Integrantes do Grupo
+
+- Francisco Macedo
+- Samuel Alexandre
+- Luigi Mendes
+
+## Como Configurar o Ambiente
+
+### Instalação do Java
+
+Para executar este projeto, você precisará do Java Development Kit (JDK) instalado na sua máquina. Siga as instruções abaixo para instalar o JDK:
+
+1. **Windows/MacOS/Linux:**
+   - Acesse a [página de downloads do JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   - Selecione o instalador adequado para o seu sistema operacional.
+   - Siga as instruções de instalação.
+
+2. **Verifique a Instalação:**
+   - Abra o terminal ou prompt de comando.
+   - Execute o comando `java -version` para verificar se o Java foi instalado corretamente.
+
+### Clonando o Repositório
+
+Para clonar o repositório do projeto, siga os passos abaixo:
+
+1. **Abra o terminal.**
+2. **Navegue até o diretório onde deseja clonar o repositório.**
+3. **Execute o comando:**
+
+   ```bash
+   git clone https://github.com/FR-macedo/EstoquePOO.git
